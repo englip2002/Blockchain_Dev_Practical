@@ -1,0 +1,38 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.6.10;
+
+contract CompactArray {
+    uint256[] public arr;
+
+    // Deleting an element creates a gap in the array.
+    // One trick to keep the array compact is to
+    // move the last element into the place to delete.
+    function remove(uint256 index) public {
+        // Move the last element into the place to delete
+        arr[index] = arr[arr.length - 1];
+        // Remove the last element
+        arr.pop();
+
+        //better algorithm
+        // uint256 i = index;
+        // while (i < arr.length) {
+        //     arr[i] = arr[i + 1];
+        //     i++;
+        // }
+        // arr.pop();
+    }
+
+    function test() public {
+        arr.push(1);
+        arr.push(2);
+        arr.push(3);
+        arr.push(4);
+        // [1, 2, 3, 4]
+
+        remove(1);
+        // [1, 4, 3]
+
+        remove(2);
+        // [1, 4]
+    }
+}
