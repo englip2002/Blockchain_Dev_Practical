@@ -5,7 +5,11 @@ contract Bidder {
     string public name;
     uint256 public bidAmount;
     bool public eligible;
-    uint256 public minBid = 100;
+    uint256 public minBid;
+
+    constructor (uint _setMinBid) public{
+        minBid=_setMinBid;
+    }
 
     function setName(string memory inName) public {
         name = inName;

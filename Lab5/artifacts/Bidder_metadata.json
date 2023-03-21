@@ -107,6 +107,17 @@
 				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_setMinBid",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			}
 		],
 		"devdoc": {
@@ -130,9 +141,9 @@
 	},
 	"sources": {
 		"Lab5/Bidder.sol": {
-			"keccak256": "0x678bbdff432fa618807ba14addf8393584b8c89b10a21d7640ede7a1e1073ca1",
+			"keccak256": "0x5163a9bf2ad0f3cd0f452e09bf833fc7f095a3a0bb2f646444ff2482209b9a8d",
 			"urls": [
-				"bzzr://e617d1ee044005c821279c2a525271692e7be3ba20d301c7c3a8a0a946888761"
+				"bzzr://4240ff8ae6702a291522b85dfb12040f512da4bca7e7407fb2760638ee7f6e09"
 			]
 		}
 	},

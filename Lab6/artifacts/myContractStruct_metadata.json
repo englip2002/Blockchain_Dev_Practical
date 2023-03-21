@@ -8,41 +8,47 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "i",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_firstName",
+						"type": "string"
 					},
 					{
-						"internalType": "uint256",
-						"name": "j",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_lastName",
+						"type": "string"
 					}
 				],
-				"name": "add",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deleteLastPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "y",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "addToX",
+				"name": "people",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lastName",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -50,7 +56,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "x",
+				"name": "peopleCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -75,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lab5/ViewandPure.sol": "ViewandPure"
+			"Lab6/myContractStruct.sol": "myContractStruct"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -89,12 +95,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lab5/ViewandPure.sol": {
-			"keccak256": "0x924247e309a29e0a0abb09754f13555387562c3f5ec6ceef45f246e8caada450",
+		"Lab6/myContractStruct.sol": {
+			"keccak256": "0x63f22c428d2a2caa4280683b9fd7648841bd61af62b9b45c8af13ff4998f4f63",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://340fbc608b87a74836c35e0b031e713ae7299ea2ba4b5877ca98b110a1a9826e",
-				"dweb:/ipfs/QmSKGjfFHkuDPdKSYJWgstYjPkfiMnscS9SkkDeN1LgoYS"
+				"bzz-raw://37cae10402e3bcf22ec6624015a3c0ddafee3901ac616c6384afe93b05f3ac4e",
+				"dweb:/ipfs/Qmf1MzMnrLd54uVgg6hVxcPsY3qVTH65iiWmVRWnnxr3CK"
 			]
 		}
 	},

@@ -8,17 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "i",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "j",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
 					}
 				],
-				"name": "add",
+				"name": "get",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,18 +21,18 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "y",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "addToX",
+				"name": "myMap",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -49,16 +44,34 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "x",
-				"outputs": [
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "remove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_i",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -75,7 +88,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lab5/ViewandPure.sol": "ViewandPure"
+			"Lab6/addressAndMapping.sol": "Mapping"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -89,12 +102,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lab5/ViewandPure.sol": {
-			"keccak256": "0x924247e309a29e0a0abb09754f13555387562c3f5ec6ceef45f246e8caada450",
+		"Lab6/addressAndMapping.sol": {
+			"keccak256": "0xfe6f067e4df02c21b970ef98fad8df58a37176616f8074bce500c2935043d635",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://340fbc608b87a74836c35e0b031e713ae7299ea2ba4b5877ca98b110a1a9826e",
-				"dweb:/ipfs/QmSKGjfFHkuDPdKSYJWgstYjPkfiMnscS9SkkDeN1LgoYS"
+				"bzz-raw://13fcd4fa7f4b067719d3876d8db88dc205b47c0f91c410212344a9305d612aec",
+				"dweb:/ipfs/QmfKrpcQLrcm9ve26aPDVJ6ytV1DnFf9oacFFs1v4di1aE"
 			]
 		}
 	},
