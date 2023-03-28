@@ -3,6 +3,7 @@ pragma solidity ^0.6.10;
 
 contract Mapping {
     // Mapping from address to uint
+    // use address to find the exect data 
     mapping(address => uint256) public myMap;
 
     function set(address _addr, uint256 _i) public {

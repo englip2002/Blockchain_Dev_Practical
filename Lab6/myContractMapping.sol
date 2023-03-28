@@ -10,6 +10,7 @@ contract myContractMapping {
     }
 
     // Mapping from address to uint
+    // use uint to find the exect data 
     mapping(uint => Person) public people;
     uint public peopleCount = 0;
 
@@ -19,8 +20,8 @@ contract myContractMapping {
         // tempPeople.firstName = _firstName;
         // tempPeople.lastName = _lastName;
         // people[peopleCount] = tempPeople;
-        people[peopleCount] = Person (peopleCount, _firstName, _lastName);
         peopleCount += 1;
+        people[peopleCount] = Person (peopleCount, _firstName, _lastName);
     }
 
 }

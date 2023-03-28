@@ -1,19 +1,49 @@
 {
 	"compiler": {
-		"version": "0.6.12+commit.27d51765"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sent",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "get",
+				"name": "balance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -28,48 +58,47 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "reciever",
 						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "remove",
+				"name": "mint",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "minter",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "reciever",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_i",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "set",
+				"name": "send",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -88,9 +117,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lab6/addressAndMapping.sol": "Mapping"
+			"Lab6/coin.sol": "coin"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -102,12 +131,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lab6/addressAndMapping.sol": {
-			"keccak256": "0x041aeb38c2709aac234f45f5070292cf10d5fb7f68006648ddcc99d685779d6b",
+		"Lab6/coin.sol": {
+			"keccak256": "0x91a123f0daf03947458fa3e7f547dabc127e9b5401575ebb85e18692692d40ad",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a05dedcd43ec282e9122e416622819b5801ab120c1c06af11e8041ff6f51691d",
-				"dweb:/ipfs/QmTC7sS5F2vFFELest7tebTsefTNZR8PDpDzmzEVLb2M4q"
+				"bzz-raw://f44907d4a1848ea3b0d7dda511ba1fb7a089d384c1017165d4e2e507de6462ca",
+				"dweb:/ipfs/QmRw4XL2p5Hpzei1Th2pPuiFpPgUtPV7QHTEqhk7tJR5q6"
 			]
 		}
 	},

@@ -94,11 +94,11 @@
 	},
 	"sources": {
 		"Lab6/myContractMapping.sol": {
-			"keccak256": "0xfb8ee3f959ece4660ecdf9c67c1895e3ea1f7ebc88363f4b5429f8bbdf9bbcf5",
+			"keccak256": "0xc4a998731203aa81408602ca8c625f2f91c3a65d9834160226cbb239d22ca087",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0b8d43086f87191281b4264b0b8b1b328233d3a8a74bd63d263d88e7b6ca50c4",
-				"dweb:/ipfs/QmStF3UUBfBpuexDhF6n1BZjhqEAz9bcjivRSgTCQXwZDw"
+				"bzz-raw://7dcde5e643255ca18c2aff6f4883179b5f38f28c7debd510d058e1acabcd390f",
+				"dweb:/ipfs/QmTK8fqPiEYnue1MLqqaDcQXg2Pw65ynAe7d1zZ7MV67tT"
 			]
 		}
 	},
