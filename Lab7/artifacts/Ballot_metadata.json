@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -42,13 +42,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "voter",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"name": "advanceState",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -123,6 +117,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "stage",
+				"outputs": [
+					{
+						"internalType": "enum Ballot.Stage",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint8",
@@ -158,16 +165,6 @@
 					{
 						"internalType": "uint8",
 						"name": "vote",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint256",
-						"name": "createTime",
-						"type": "uint256"
-					},
-					{
-						"internalType": "enum Ballot.Stage",
-						"name": "stage",
 						"type": "uint8"
 					}
 				],
@@ -220,11 +217,11 @@
 	},
 	"sources": {
 		"Lab7/Ballot.sol": {
-			"keccak256": "0x464533a67d82305ed06c71cb966bb61dd2e6aeadfda1795281d4f21315532906",
+			"keccak256": "0xeae4b8faeff7f436a029c845aae82107560929d344eadb7488d86a4d9309563d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://69b351ac0ba87986d72580ff3d53940dea58bcac7ff1bd7fccefa3947cb22b85",
-				"dweb:/ipfs/QmYQPgNk7n84EBLa9Dh3TzCLHgqmroDPrLsCQfER7jk37F"
+				"bzz-raw://1e62a3af3c4c6db91f39d02d3ed139787770d428c6ab2f9d9663d769a5723f96",
+				"dweb:/ipfs/QmWJdbEqUdmme9tuqtEPhrhMEmHpB7tJYSeCyVtx5jRUV2"
 			]
 		}
 	},
