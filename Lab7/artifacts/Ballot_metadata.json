@@ -43,13 +43,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "advanceState",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "chairperson",
 				"outputs": [
 					{
@@ -202,7 +195,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lab7/Ballot.sol": "Ballot"
+			"Lab7/BallotWithStage.sol": "Ballot"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -216,12 +209,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lab7/Ballot.sol": {
-			"keccak256": "0xeae4b8faeff7f436a029c845aae82107560929d344eadb7488d86a4d9309563d",
+		"Lab7/BallotWithStage.sol": {
+			"keccak256": "0x4ec31693b4a74c221a94265186f2b696a3a245b211d5c4f8b916eb0babd9773d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1e62a3af3c4c6db91f39d02d3ed139787770d428c6ab2f9d9663d769a5723f96",
-				"dweb:/ipfs/QmWJdbEqUdmme9tuqtEPhrhMEmHpB7tJYSeCyVtx5jRUV2"
+				"bzz-raw://d926c40c0e6a1a2bdd0b04399afeb5649c49d079cd14c8837d189aeeaa9497ee",
+				"dweb:/ipfs/QmbBP9fBHc5J5uYE4kUZaRXxmk7wVTnGzLa8UbWwaFonNW"
 			]
 		}
 	},

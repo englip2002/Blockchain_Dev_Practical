@@ -21,7 +21,7 @@ contract Ballot {
         Done
     }
 
-    Stage public stage;
+    Stage public stage = Stage.Init;
     uint256 public proposalCount = 0;
     uint256 public VoterCount = 0;
     address public chairperson;
@@ -35,13 +35,9 @@ contract Ballot {
     constructor() {
         chairperson = msg.sender;
         voters[chairperson].weight = 2;
-        stage = Stage.Init;
-        startTime = block.timestamp;
-    }
-
-    function changeStateToReg() public returns (Stage){
         stage = Stage.Reg;
-        return stage;
+        startTime = block.timestamp;
+        VoterCount++;
     }
 
     function addProposalDetail(uint256 _id, string memory _subjectProposal)
@@ -52,7 +48,7 @@ contract Ballot {
         proposalCount++;
     }
 
-    //modifiers
+    //modifiers (ensure the requirement is fulfilled before execute function)
     modifier validStage(Stage reqStage) {
         require(stage == reqStage);
         _;
@@ -79,11 +75,13 @@ contract Ballot {
         //if (stage != Stage.Reg) {return;}
         Voter storage sender = voters[msg.sender];
         if (sender.voted || toProposal >= proposals.length) return;
-        sender.voted = true;
-        sender.vote = toProposal;
+        else {
+            sender.voted = true;
+            sender.vote = toProposal;
+        }
 
         proposals[toProposal].voteCount += sender.weight;
-        
+
         if (block.timestamp > (startTime + 30 seconds)) {
             stage = Stage.Done;
         }
